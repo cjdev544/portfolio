@@ -1,0 +1,19 @@
+@import '../../scss/index.scss';
+
+.header-container {
+  background-color: $dark;
+  border-bottom: 1px solid $grey-ligth;
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  z-index: 998;
+
+  .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}

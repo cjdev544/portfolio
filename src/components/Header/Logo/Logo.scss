@@ -1,0 +1,22 @@
+@import '../../../scss/index.scss';
+
+.header a {
+  text-decoration: none;
+}
+
+.logo-main {
+  color: $light;
+  margin: 0;
+
+  &:hover {
+    color: $light;
+  }
+
+  & h2 {
+    margin: 0;
+  }
+
+  & span {
+    color: $primary;
+  }
+}

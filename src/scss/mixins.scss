@@ -1,0 +1,16 @@
+@mixin font($size) {
+  font-size: nth(map-get($fonts, $size), 1);
+  line-height: nth(map-get($fonts, $size), 2);
+}
+
+@mixin from-min($breakpont) {
+  @media screen and (min-width: map-get($breakpoints, $breakpont)) {
+    @content;
+  }
+}
+
+@mixin from-max($breakpont) {
+  @media screen and (max-width: map-get($breakpoints, $breakpont)) {
+    @content;
+  }
+}

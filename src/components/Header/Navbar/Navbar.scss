@@ -1,0 +1,51 @@
+@import '../../../scss/index.scss';
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: $light !important;
+}
+
+.logo-main {
+  left: 20px;
+  position: fixed;
+  top: 20px;
+}
+
+.hamburger {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+}
+
+.panel {
+  background-color: $dark;
+  height: 100vh;
+  position: fixed;
+  top: 4rem;
+  width: 100%;
+  left: -100%;
+  transition: all 0.3s ease-in;
+  opacity: 0.8;
+
+  &.is-active {
+    left: 0;
+  }
+
+  & nav ul {
+    height: 100vh;
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+
+    & li {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+}
