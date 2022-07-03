@@ -1,0 +1,13 @@
+@import '../../scss/vars.scss';
+
+.about {
+  background-color: $grey-dark;
+
+  & .title2 {
+    margin: 0;
+  }
+
+  & p {
+    text-align: center;
+  }
+}

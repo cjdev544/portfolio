@@ -1,0 +1,15 @@
+@import '../../scss/vars.scss';
+
+.title-section {
+  margin: 0 auto;
+  position: relative;
+
+  span:before {
+    background-color: $primary;
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+  }
+}

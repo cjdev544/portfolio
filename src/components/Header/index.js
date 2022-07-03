@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
-import './Header.scss'
 import Navbar from './Navbar'
+import './Header.scss'
 
 const Header = () => {
   return (
