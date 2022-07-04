@@ -5,13 +5,15 @@ import './Projects.scss'
 
 const Projects = () => {
   return (
-    <section className='projects'>
-      <SectionsTitle title='PROYECTOS' color='#fff' />
-      <p>
-        Aqui podras encontrar mis ultimos prjecto. da click sobre alguno y veras
-        mas información.
-      </p>
-      <ProjectItems />
+    <section className='project-container l-sections'>
+      <div className='projects l-container'>
+        <SectionsTitle title='PROYECTOS' color='#fff' />
+        <p>
+          Aqui podras encontrar mis ultimos pryectos. da click sobre alguno y
+          podrás ver mas información.
+        </p>
+        <ProjectItems />
+      </div>
     </section>
   )
 }

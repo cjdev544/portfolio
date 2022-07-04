@@ -1,7 +1,8 @@
 @import '../../scss/vars.scss';
 
 .footer {
-  background-color: $grey-ligth;
+  background-color: $dark;
+  color: $light;
 
   small {
     display: block;
@@ -9,6 +10,7 @@
     text-align: center;
 
     span {
+      color: $primary;
       display: block;
       font-weight: bold;
     }

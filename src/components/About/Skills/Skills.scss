@@ -1,3 +1,9 @@
+@import '../../../scss/vars.scss';
+
 .skills {
   text-align: center;
+
+  p {
+    color: $light;
+  }
 }

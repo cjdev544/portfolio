@@ -36,17 +36,19 @@
   // Media Query
   @include from-min(large) {
     background-color: transparent;
+    height: initial;
     position: initial;
     width: initial;
   }
 
   background-color: $dark;
+  height: 100vh;
+  left: -100%;
+  opacity: 0.95;
   position: fixed;
   top: 4rem;
-  width: 100%;
-  left: -100%;
   transition: all 0.3s ease-in;
-  opacity: 0.8;
+  width: 100%;
 
   &.is-active {
     left: 0;
@@ -72,6 +74,7 @@
       }
 
       font-size: 1.5rem;
+      font-weight: bold;
       margin-top: 2rem;
       padding: 2rem;
       text-align: center;

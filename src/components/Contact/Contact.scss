@@ -1,33 +1,36 @@
 @import '../../scss/vars.scss';
 @import '../../scss/mixins.scss';
 
-.contact {
-  background-color: $grey-dark;
-  color: $light;
+.contact-container {
+  background-color: $grey-ligth;
+  color: $dark;
   text-align: center;
 
-  &-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  .item {
-    // Media Query
-    @include from-min(medium) {
-      max-width: 20%;
+  .contact {
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 auto;
     }
 
-    background-color: $dark;
-    border-radius: 5px;
-    border: 2px solid $primary;
-    margin-top: 2rem;
-    padding: 1rem;
-    width: 40%;
+    .item {
+      // Media Query
+      @include from-min(medium) {
+        max-width: 20%;
+      }
 
-    .icon {
-      font-size: 2rem;
+      background-color: $dark;
+      border-radius: 5px;
+      border: 2px solid $primary;
+      color: $light;
+      margin-top: 2rem;
+      padding: 1rem;
+      width: 40%;
+
+      .icon {
+        font-size: 2rem;
+      }
     }
   }
 }

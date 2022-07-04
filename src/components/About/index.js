@@ -5,9 +5,11 @@ import Skills from './Skills'
 
 const About = () => {
   return (
-    <section className='about'>
-      <AboutMy />
-      <Skills />
+    <section className='about-container'>
+      <div className='about l-container'>
+        <AboutMy />
+        <Skills />
+      </div>
     </section>
   )
 }

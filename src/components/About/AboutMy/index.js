@@ -4,7 +4,7 @@ import './AboutMy.scss'
 
 const AboutMy = () => {
   return (
-    <div className='about-my'>
+    <div className='about-my l-container l-sections'>
       <div className='about-my__container'>
         <SectionsTitle title='SOBRE MI' color='#fff' />
         <p>

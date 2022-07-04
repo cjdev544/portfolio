@@ -41,8 +41,10 @@ const HeroImage = () => {
           src='../../images/perfil 1.png'
           alt='Foto Jefferson Campos'
         />
-        <h1 className='title1'>Jefferson Campos</h1>
-        <p>Desarrollador Frontend</p>
+        <div className='hero-copy__info'>
+          <h1 className='title1'>Jefferson Campos</h1>
+          <p className='title3'>Desarrollador Frontend</p>
+        </div>
       </div>
     </BackgroundImage>
   )

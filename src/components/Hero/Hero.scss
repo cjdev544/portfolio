@@ -1,4 +1,5 @@
 @import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
 
 .hero {
   background-image: url('../../images/hero.jpg');
@@ -16,6 +17,13 @@
   }
 
   &-copy {
+    // Media Query
+    @include from-min(large) {
+      flex-direction: row;
+      margin: 0 auto;
+      width: 50rem;
+    }
+
     align-items: center;
     border-bottom: 2px solid #000;
     display: flex;
@@ -23,9 +31,17 @@
     height: 100%;
     justify-content: center;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 
     &__img {
+      // Media Query
+      @include from-min(large) {
+        width: 300px;
+      }
+      @include from-min(medium) {
+        width: 250px;
+      }
+
       border-radius: 50%;
       border: 2px solid $grey-ligth;
       margin: 0 auto;

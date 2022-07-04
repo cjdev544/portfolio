@@ -1,20 +1,22 @@
 @import '../../scss/vars.scss';
 @import '../../scss/mixins.scss';
 
-.about {
-  // Media Query
-  @include from-min(large) {
-    display: flex;
-    margin: 0 auto;
-  }
-
+.about-container {
   background-color: $grey-dark;
 
-  & .title2 {
-    margin: 0;
-  }
+  .about {
+    // Media Query
+    @include from-min(large) {
+      display: flex;
+      margin: 0 auto;
+    }
 
-  & p {
-    text-align: center;
+    & .title2 {
+      margin: 0;
+    }
+
+    & p {
+      text-align: center;
+    }
   }
 }

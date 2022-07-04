@@ -1,45 +1,52 @@
 @import '../../scss/vars.scss';
 @import '../../scss/mixins.scss';
 
-.services {
+.container {
   background-color: $grey-ligth;
   text-align: center;
 
-  &-container {
-    // Media Query
-    @include from-min(medium) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-    }
-
-    &__item {
+  .services {
+    &-container {
       // Media Query
-      @include from-min(large) {
-        height: 16rem;
-        max-width: 22rem;
+      @include from-min(medium) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
       }
 
-      background-color: $dark;
-      border-radius: 5px;
-      text-align: center;
-      margin: 0 auto;
-      max-width: 20rem;
-      padding: 1rem;
-      height: 12rem;
-      margin-top: 3rem;
+      &__item {
+        // Media Query
+        @include from-min(large) {
+          height: 16rem;
+          max-width: 22rem;
+        }
+        @include from-min(medium) {
+          height: 16rem;
+          max-width: 22rem;
+        }
 
-      & .faicons {
-        color: $primary;
-        height: 2.5rem;
-      }
+        background-color: $dark;
+        border: 2px solid $primary;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 20rem;
+        padding: 1rem;
+        height: 12rem;
+        margin-top: 3rem;
 
-      h3 {
-        color: $light;
-      }
+        & .faicons {
+          color: $primary;
+          height: 2.5rem;
+        }
 
-      p {
-        color: $grey-ligth;
+        h3 {
+          color: $light;
+        }
+
+        p {
+          color: $grey-ligth;
+        }
       }
     }
   }
