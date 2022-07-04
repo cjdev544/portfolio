@@ -1,5 +1,46 @@
 @import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
 
 .services {
   background-color: $grey-ligth;
+  text-align: center;
+
+  &-container {
+    // Media Query
+    @include from-min(medium) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    &__item {
+      // Media Query
+      @include from-min(large) {
+        height: 16rem;
+        max-width: 22rem;
+      }
+
+      background-color: $dark;
+      border-radius: 5px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 20rem;
+      padding: 1rem;
+      height: 12rem;
+      margin-top: 3rem;
+
+      & .faicons {
+        color: $primary;
+        height: 2.5rem;
+      }
+
+      h3 {
+        color: $light;
+      }
+
+      p {
+        color: $grey-ligth;
+      }
+    }
+  }
 }

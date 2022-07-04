@@ -1,5 +1,36 @@
 @import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
 
 .projects {
-  background-color: $dark;
+  background-color: $grey-dark;
+  text-align: center;
+
+  p {
+    color: $light;
+  }
+
+  &-items {
+    // Media Query
+    @include from-min(medium) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  }
+
+  .item {
+    // Media Query
+    @include from-min(medium) {
+      max-width: 40%;
+    }
+
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 96%;
+
+    img {
+      border: 2px solid $primary;
+      border-radius: 5px;
+    }
+  }
 }

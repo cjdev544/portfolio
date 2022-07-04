@@ -1,4 +1,5 @@
 @import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
 
 .header-container {
   background-color: $dark;
@@ -11,6 +12,11 @@
   z-index: 998;
 
   .header {
+    // Media Query
+    @include from-min(large) {
+      height: $header-height;
+    }
+
     align-items: center;
     display: flex;
     justify-content: space-between;

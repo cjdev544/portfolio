@@ -1,4 +1,5 @@
 @import '../../../scss/vars.scss';
+@import '../../../scss/mixins.scss';
 
 .hamburger-inner,
 .hamburger-inner::before,
@@ -10,20 +11,36 @@
 }
 
 .logo-main {
+  // Media Query
+  @include from-min(large) {
+    position: initial;
+  }
+
   left: 20px;
   position: fixed;
-  top: 20px;
+  top: 15px;
 }
 
 .hamburger {
+  // Media Query
+  @include from-min(large) {
+    display: none !important;
+  }
+
   position: fixed;
   right: 5px;
   top: 5px;
 }
 
 .panel {
+  // Media Query
+  @include from-min(large) {
+    background-color: transparent;
+    position: initial;
+    width: initial;
+  }
+
   background-color: $dark;
-  height: 100vh;
   position: fixed;
   top: 4rem;
   width: 100%;
@@ -36,12 +53,24 @@
   }
 
   & nav ul {
-    height: 100vh;
+    // Media Query
+    @include from-min(large) {
+      display: flex;
+    }
+
+    // height: 100vh;
     list-style: none;
     margin: 0 auto;
     width: 100%;
 
     & li {
+      // Media Query
+      @include from-min(large) {
+        margin: 0;
+        padding: 0;
+        margin-left: 2.5rem;
+      }
+
       font-size: 1.5rem;
       margin-top: 2rem;
       padding: 2rem;

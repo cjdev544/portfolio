@@ -2,4 +2,15 @@
 
 .footer {
   background-color: $grey-ligth;
+
+  small {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+
+    span {
+      display: block;
+      font-weight: bold;
+    }
+  }
 }

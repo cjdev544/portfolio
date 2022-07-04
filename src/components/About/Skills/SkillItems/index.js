@@ -5,125 +5,155 @@ import './SkillItems.scss'
 const SkillItems = () => {
   return (
     <div className='skill-items'>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/HTML.svg'
-          alt='HTML'
-        />
-        <h3>HTML</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/HTML.svg'
+            alt='HTML'
+          />
+        </div>
+        <h3 className='base'>HTML</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/CSS.svg'
-          alt='CSS'
-        />
-        <h3>CSS</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/CSS.svg'
+            alt='CSS'
+          />
+        </div>
+        <h3 className='base'>CSS</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/JavaScript.svg'
-          alt='JavaScript'
-        />
-        <h3>JavaScript</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/JavaScript.svg'
+            alt='JavaScript'
+          />
+        </div>
+        <h3 className='base'>JavaScript</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Sass.svg'
-          alt='Sass'
-        />
-        <h3>Sass</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Sass.svg'
+            alt='Sass'
+          />
+        </div>
+        <h3 className='base'>Sass</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/React.svg'
-          alt='React'
-        />
-        <h3>React</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/React.svg'
+            alt='React'
+          />
+        </div>
+        <h3 className='base'>React</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Gatsby.svg'
-          alt='Gatsby'
-        />
-        <h3>Gatsby</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Gatsby.svg'
+            alt='Gatsby'
+          />
+        </div>
+        <h3 className='base'>Gatsby</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/NextJs.svg'
-          alt='NextJs'
-        />
-        <h3>NextJs</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/NextJs.svg'
+            alt='NextJs'
+          />
+        </div>
+        <h3 className='base'>NextJs</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Redux.svg'
-          alt='Redux'
-        />
-        <h3>Redux</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Redux.svg'
+            alt='Redux'
+          />
+        </div>
+        <h3 className='base'>Redux</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/GraphQL.svg'
-          alt='GraphQL'
-        />
-        <h3>GraphQL</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/GraphQL.svg'
+            alt='GraphQL'
+          />
+        </div>
+        <h3 className='base'>GraphQL</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Firebase.svg'
-          alt='Firebase'
-        />
-        <h3>Firebase</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Firebase.svg'
+            alt='Firebase'
+          />
+        </div>
+        <h3 className='base'>Firebase</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Git.svg'
-          alt='Git'
-        />
-        <h3>Git</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Git.svg'
+            alt='Git'
+          />
+        </div>
+        <h3 className='base'>Git</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Electron.svg'
-          alt='Electron'
-        />
-        <h3>Electron</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Electron.svg'
+            alt='Electron'
+          />
+        </div>
+        <h3 className='base'>Electron</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/NodeJs.svg'
-          alt='NodeJs'
-        />
-        <h3>NodeJs</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/NodeJs.svg'
+            alt='NodeJs'
+          />
+        </div>
+        <h3 className='base'>NodeJs</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/Express.svg'
-          alt='Express'
-        />
-        <h3>Express</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img'
+            src='../../../../images/Express.svg'
+            alt='Express'
+          />
+        </div>
+        <h3 className='base'>Express</h3>
       </div>
-      <div className='skill-item__element'>
-        <StaticImage
-          className='skill-items__img'
-          src='../../../../images/MongoDB.svg'
-          alt='MongoDB'
-        />
-        <h3>MongoDB</h3>
+      <div className='skill-items__element'>
+        <div className='img-container'>
+          <StaticImage
+            className='img-container__img-mongo'
+            src='../../../../images/MongoDB.svg'
+            alt='MongoDB'
+          />
+        </div>
+        <h3 className='base'>MongoDB</h3>
       </div>
     </div>
   )

@@ -4,8 +4,8 @@ import './Fotter.scss'
 const Footer = () => {
   return (
     <footer className='footer'>
-      <small>
-        Desarrolado por <span>CjDev544</span>
+      <small className='smaller'>
+        Desarrollado por <span className='small'>CjDev544</span>
       </small>
     </footer>
   )

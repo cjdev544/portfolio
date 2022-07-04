@@ -1,6 +1,13 @@
 @import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
 
 .about {
+  // Media Query
+  @include from-min(large) {
+    display: flex;
+    margin: 0 auto;
+  }
+
   background-color: $grey-dark;
 
   & .title2 {

@@ -1,5 +1,33 @@
 @import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
 
 .contact {
-  background-color: $dark;
+  background-color: $grey-dark;
+  color: $light;
+  text-align: center;
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .item {
+    // Media Query
+    @include from-min(medium) {
+      max-width: 20%;
+    }
+
+    background-color: $dark;
+    border-radius: 5px;
+    border: 2px solid $primary;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 40%;
+
+    .icon {
+      font-size: 2rem;
+    }
+  }
 }

@@ -1,0 +1,44 @@
+@import '../../../../scss/vars.scss';
+@import '../../../../scss/mixins.scss';
+
+.skill-items {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__element {
+    align-items: center;
+    background-color: $dark;
+    border-radius: 5px;
+    border: 2px solid $primary;
+    display: flex;
+    flex-direction: column;
+    height: 6.5rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 6.5rem;
+
+    & .img-container {
+      align-items: center;
+      display: flex;
+      height: 2.5rem;
+      justify-content: space-between;
+
+      &__img {
+        margin-top: 0.5rem;
+        width: 2.5rem;
+      }
+
+      &__img-mongo {
+        & img {
+          width: 1.5rem;
+        }
+      }
+    }
+
+    h3 {
+      color: $light;
+      margin: 0;
+    }
+  }
+}

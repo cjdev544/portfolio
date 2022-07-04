@@ -30,12 +30,16 @@ body {
   }
 }
 
-.small {
-  @include font(smaller);
+.base {
+  @include font(small);
 
   @include from-min(medium) {
-    @include font(small);
+    @include font(base);
   }
+}
+
+.small {
+  @include font(small);
 }
 
 .smaller {
@@ -59,10 +63,4 @@ h1 {
 .title3 {
   margin-top: 0;
   margin-bottom: 0.5em;
-}
-
-.small,
-.smaller {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
