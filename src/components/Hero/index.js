@@ -29,9 +29,9 @@ const HeroImage = () => {
 
   return (
     <BackgroundImage
+      id='inicio'
       className='hero'
       Tag='section'
-      // Spread bgImage into BackgroundImage:
       {...bgImage}
       preserveStackingContext
     >

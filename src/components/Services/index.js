@@ -15,7 +15,7 @@ import './Services.scss'
 
 const Services = () => {
   return (
-    <section className='container l-sections'>
+    <section id='servicios' className='container l-sections'>
       <div className='services l-container'>
         <SectionsTitle title='SERVICIOS' color='#000' />
         <p>

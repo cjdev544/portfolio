@@ -11,7 +11,7 @@ import './Contact.scss'
 
 const Contact = () => {
   return (
-    <section className='contact-container l-sections'>
+    <section id='contacto' className='contact-container l-sections'>
       <div className='contact l-container'>
         <SectionsTitle title='CONTACTO' color='#000' />
         <p>

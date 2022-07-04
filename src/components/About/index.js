@@ -5,7 +5,7 @@ import Skills from './Skills'
 
 const About = () => {
   return (
-    <section className='about-container'>
+    <section id='sobre_mi' className='about-container'>
       <div className='about l-container'>
         <AboutMy />
         <Skills />
