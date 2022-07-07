@@ -17,4 +17,20 @@
       margin-right: 10rem;
     }
   }
+
+  button {
+    background-color: $dark;
+    border-radius: 10px;
+    border: 2px solid $primary;
+    color: $grey-ligth;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $grey-ligth;
+      color: $dark;
+    }
+  }
 }

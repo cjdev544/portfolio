@@ -19,34 +19,54 @@ const Contact = () => {
           posible.
         </p>
         <div className='contact-items'>
-          <div className='item'>
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              title='whatsapp'
-              className='icon'
-            />
-            <p className='title3'>WhatsApp</p>
-          </div>
-          <div className='item'>
-            <FontAwesomeIcon
-              icon={faTwitter}
-              title='twitter'
-              className='icon'
-            />
-            <p className='title3'>Twitter</p>
-          </div>
-          <div className='item'>
-            <FontAwesomeIcon icon={faGithub} title='github' className='icon' />
-            <p className='title3'>Github</p>
-          </div>
-          <div className='item'>
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              title='linkedin'
-              className='icon'
-            />
-            <p className='title3'>Linkedin</p>
-          </div>
+          <a href='#' target='_blank' rel='noopener noreferrer'>
+            <div className='item'>
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                title='whatsapp'
+                className='icon'
+              />
+              <p className='title3'>WhatsApp</p>
+            </div>
+          </a>
+          <a href='#' target='_blank' rel='noopener noreferrer'>
+            <div className='item'>
+              <FontAwesomeIcon
+                icon={faTwitter}
+                title='twitter'
+                className='icon'
+              />
+              <p className='title3'>Twitter</p>
+            </div>
+          </a>
+          <a
+            href='https://github.com/cjdev544'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <div className='item'>
+              <FontAwesomeIcon
+                icon={faGithub}
+                title='github'
+                className='icon'
+              />
+              <p className='title3'>Github</p>
+            </div>
+          </a>
+          <a
+            href='https://www.linkedin.com/in/cjdev544/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <div className='item'>
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                title='linkedin'
+                className='icon'
+              />
+              <p className='title3'>Linkedin</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>

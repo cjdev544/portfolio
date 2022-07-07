@@ -1,0 +1,57 @@
+@import '../../../scss/vars.scss';
+@import '../../../scss/mixins.scss';
+
+.item {
+  // Media Query
+  @include from-min(medium) {
+    max-width: 40%;
+  }
+
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 96%;
+
+  &-container {
+    cursor: pointer;
+    position: relative;
+
+    &:hover .item-info {
+      opacity: 0.75;
+    }
+  }
+
+  &__img {
+    border: 2px solid $primary;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  &-info {
+    align-items: center;
+    background-color: $dark;
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+
+    .title3,
+    p {
+      line-height: 25px;
+      margin: 0;
+    }
+
+    &-text {
+      border-bottom: 4px solid $light;
+      border-radius: 5px;
+      border-top: 4px solid $light;
+      padding: 0.5rem;
+      max-width: 90%;
+    }
+  }
+}

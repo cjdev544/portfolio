@@ -18,21 +18,5 @@
         margin: 0 auto;
       }
     }
-
-    .item {
-      // Media Query
-      @include from-min(medium) {
-        max-width: 40%;
-      }
-
-      margin: 0 auto;
-      margin-top: 3rem;
-      max-width: 96%;
-
-      img {
-        border: 2px solid $primary;
-        border-radius: 5px;
-      }
-    }
   }
 }

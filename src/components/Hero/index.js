@@ -14,7 +14,7 @@ const HeroImage = () => {
           childImageSharp {
             gatsbyImageData(
               width: 200
-              placeholder: BLURRED
+              placeholder: TRACED_SVG
               formats: [AUTO, WEBP, AVIF]
             )
           }
@@ -40,6 +40,7 @@ const HeroImage = () => {
           className='hero-copy__img'
           src='../../images/perfil 1.png'
           alt='Foto Jefferson Campos'
+          placeholder='tracedSVG'
         />
         <div className='hero-copy__info'>
           <h1 className='title1'>Jefferson Campos</h1>

@@ -13,6 +13,7 @@ const AboutMy = () => {
           tecnología. Programador, guitarrista afisionado y amante de los
           animales. Contactame y llevemos tus ideas a codigo.
         </p>
+        <button className='button'>Descargar CV</button>
       </div>
     </div>
   )

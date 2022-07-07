@@ -14,7 +14,7 @@
       margin: 0 auto;
     }
 
-    .item {
+    a {
       // Media Query
       @include from-min(medium) {
         max-width: 20%;
@@ -26,7 +26,12 @@
       color: $light;
       margin-top: 2rem;
       padding: 1rem;
+      transition: all 0.3s ease;
       width: 40%;
+
+      &:hover {
+        background-color: $grey-dark;
+      }
 
       .icon {
         font-size: 2rem;
